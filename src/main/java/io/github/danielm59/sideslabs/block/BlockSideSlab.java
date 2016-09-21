@@ -17,8 +17,8 @@ public class BlockSideSlab extends Block
 
 	public static final PropertyDirection FACING = PropertyDirection.create("facing", EnumFacing.Plane.HORIZONTAL);
 	
-	public BlockSideSlab() {
-		super(Material.ROCK);
+	public BlockSideSlab(Material material) {
+		super(material);
 		this.setDefaultState(this.blockState.getBaseState().withProperty(FACING, EnumFacing.NORTH));
 	}
 	
