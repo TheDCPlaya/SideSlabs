@@ -13,7 +13,7 @@ public class CreativeTabSS
 		@Override
 		public Item getTabIconItem()
 		{
-			return null;
+			return ModBlocks.itemStoneSideSlab;
 		}
 	};
 }
