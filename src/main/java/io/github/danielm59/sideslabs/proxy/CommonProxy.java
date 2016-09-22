@@ -5,6 +5,7 @@ import io.github.danielm59.sideslabs.item.ModItems;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
+import recipes.Recipes;
 
 public abstract class CommonProxy
 {
@@ -22,7 +23,7 @@ public abstract class CommonProxy
 
 	public void postInit(FMLPostInitializationEvent e)
 	{
-
+		Recipes.init();
 	}
 
 }
