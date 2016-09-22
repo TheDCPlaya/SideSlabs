@@ -1,5 +1,6 @@
 package io.github.danielm59.sideslabs.block;
 
+import io.github.danielm59.sideslabs.creativetab.CreativeTabSS;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockSlab;
 import net.minecraft.block.material.Material;
@@ -28,6 +29,7 @@ public class BlockSideSlab extends Block
 	public BlockSideSlab(Material material) {
 		super(material);
 		this.setDefaultState(this.blockState.getBaseState().withProperty(FACING, EnumFacing.NORTH));
+		this.setCreativeTab(CreativeTabSS.SIDESLABS_TAB);
 	}
 	
 	@Override
