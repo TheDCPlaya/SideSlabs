@@ -1,0 +1,7 @@
+{
+    "parent": "sideslabs:block/sideslab",
+    "textures": {
+        "face": "blocks/planks_acacia",
+        "side": "blocks/planks_acacia"
+    }
+}

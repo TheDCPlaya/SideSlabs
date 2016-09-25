@@ -1,0 +1,7 @@
+{
+    "parent": "sideslabs:block/sideslab",
+    "textures": {
+        "face": "blocks/sandstone_normal",
+        "side": "blocks/sandstone_top"
+    }
+}

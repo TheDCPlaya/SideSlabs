@@ -1,8 +1,8 @@
 {
     "variants": {
-        "facing=north": { "model": "half_slab_brick", "x": 90 },
-        "facing=south": { "model": "half_slab_brick", "x": 90, "y": 180 },
-        "facing=west":  { "model": "half_slab_brick", "x": 90, "y": 270 },
-        "facing=east":  { "model": "half_slab_brick", "x": 90, "y": 90 }
+        "facing=north": { "model": "sideslabs:bricksideslab" },
+        "facing=south": { "model": "sideslabs:bricksideslab", "y": 180 },
+        "facing=west":  { "model": "sideslabs:bricksideslab", "y": 270 },
+        "facing=east":  { "model": "sideslabs:bricksideslab", "y": 90 }
     }
 }

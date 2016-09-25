@@ -1,0 +1,7 @@
+{
+    "parent": "sideslabs:block/sideslab",
+    "textures": {
+        "face": "blocks/purpur_block",
+        "side": "blocks/purpur_block"
+    }
+}

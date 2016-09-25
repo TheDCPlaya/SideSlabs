@@ -1,0 +1,7 @@
+{
+    "parent": "sideslabs:block/sideslab",
+    "textures": {
+        "face": "blocks/stonebrick",
+        "side": "blocks/stonebrick"
+    }
+}

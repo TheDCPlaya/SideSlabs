@@ -1,8 +1,8 @@
 {
     "variants": {
-        "facing=north": { "model": "half_slab_acacia", "x": 90 },
-        "facing=south": { "model": "half_slab_acacia", "x": 90, "y": 180 },
-        "facing=west":  { "model": "half_slab_acacia", "x": 90, "y": 270 },
-        "facing=east":  { "model": "half_slab_acacia", "x": 90, "y": 90 }
+        "facing=north": { "model": "sideslabs:acaciasideslab" },
+        "facing=south": { "model": "sideslabs:acaciasideslab", "y": 180 },
+        "facing=west":  { "model": "sideslabs:acaciasideslab", "y": 270 },
+        "facing=east":  { "model": "sideslabs:acaciasideslab", "y": 90 }
     }
 }

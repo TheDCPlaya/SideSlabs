@@ -1,0 +1,7 @@
+{
+    "parent": "sideslabs:block/sideslab",
+    "textures": {
+        "face": "blocks/nether_brick",
+        "side": "blocks/nether_brick"
+    }
+}

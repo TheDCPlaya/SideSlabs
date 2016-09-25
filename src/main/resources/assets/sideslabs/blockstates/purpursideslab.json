@@ -1,8 +1,8 @@
 {
     "variants": {
-        "facing=north": { "model": "half_slab_purpur", "x": 90 },
-        "facing=south": { "model": "half_slab_purpur", "x": 90, "y": 180 },
-        "facing=west":  { "model": "half_slab_purpur", "x": 90, "y": 270 },
-        "facing=east":  { "model": "half_slab_purpur", "x": 90, "y": 90 }
+        "facing=north": { "model": "sideslabs:purpursideslab" },
+        "facing=south": { "model": "sideslabs:purpursideslab", "y": 180 },
+        "facing=west":  { "model": "sideslabs:purpursideslab", "y": 270 },
+        "facing=east":  { "model": "sideslabs:purpursideslab", "y": 90 }
     }
 }
