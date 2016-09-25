@@ -2,7 +2,6 @@ package io.github.danielm59.sideslabs.block;
 
 import io.github.danielm59.sideslabs.creativetab.CreativeTabSS;
 import net.minecraft.block.Block;
-import net.minecraft.block.BlockSlab;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.properties.IProperty;
 import net.minecraft.block.properties.PropertyDirection;
@@ -85,13 +84,37 @@ public class BlockSideSlab extends Block
 	@Override
 	public IBlockState onBlockPlaced(World worldIn, BlockPos pos, EnumFacing facing, float hitX, float hitY, float hitZ, int meta, EntityLivingBase placer)
 	{
-		return this.getDefaultState().withProperty(FACING, placer.getHorizontalFacing().getOpposite());
+		boolean flag1 = hitX + hitZ > 1.0f;
+		boolean flag2 = hitX > hitZ;
+		
+		EnumFacing blockFacing = EnumFacing.NORTH;
+		if (flag1)
+		{
+			if (flag2)
+			{
+				blockFacing=EnumFacing.WEST;
+			}else
+			{
+				blockFacing=EnumFacing.NORTH;
+			}
+		}else
+		{
+			if (flag2)
+			{
+				blockFacing=EnumFacing.SOUTH;
+			}else
+			{
+				blockFacing=EnumFacing.EAST;
+			}
+		}
+		
+		return this.getDefaultState().withProperty(FACING, blockFacing);
 	}
 
 	@Override
 	public void onBlockPlacedBy(World worldIn, BlockPos pos, IBlockState state, EntityLivingBase placer, ItemStack stack)
 	{
-		worldIn.setBlockState(pos, state.withProperty(FACING, placer.getHorizontalFacing().getOpposite()), 2);
+		worldIn.setBlockState(pos, state, 2);
 	}
 	
 	@Override
