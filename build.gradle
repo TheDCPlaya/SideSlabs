@@ -21,6 +21,9 @@ plugins {
 }
 */
 version = "1.0"
+if (System.getenv().DRONE_BUILD_NUMBER != null) {
+    version += ".${System.getenv().DRONE_BUILD_NUMBER}"
+}
 group= "io.github.danielm59.sideslabs" // http://maven.apache.org/guides/mini/guide-naming-conventions.html
 archivesBaseName = "sideslabs"
 
