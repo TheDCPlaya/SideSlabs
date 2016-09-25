@@ -2,10 +2,10 @@ package io.github.danielm59.sideslabs.proxy;
 
 import io.github.danielm59.sideslabs.block.ModBlocks;
 import io.github.danielm59.sideslabs.item.ModItems;
+import io.github.danielm59.sideslabs.recipes.Recipes;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
-import recipes.Recipes;
 
 public abstract class CommonProxy
 {
