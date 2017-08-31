@@ -7,7 +7,7 @@ public class ItemHelper {
 	public static ItemStack cloneItemStack(ItemStack itemStack, int stackSize)
 	{
 		ItemStack clonedItemStack = itemStack.copy();
-		clonedItemStack.stackSize = stackSize;
+        stackSize = clonedItemStack.getCount();
 		return clonedItemStack;
 	}
 
