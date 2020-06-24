@@ -25,6 +25,7 @@ public class ModItems
     public static final Item itemDarkoakSideSlab = new ItemBlock(darkoakSideSlab);
     public static final Item itemRedsandstoneSideSlab = new ItemBlock(redsandstoneSideSlab);
     public static final Item itemPurpurSideSlab = new ItemBlock(purpurSideSlab);
+    public static final Item itemObsidianSideSlab = new ItemBlock(obsidianSideSlab);
 
 	public static void init(RegistryEvent.Register<Item> event)
 	{
@@ -87,11 +88,15 @@ public class ModItems
         itemPurpurSideSlab.setRegistryName(purpurSideSlab.getRegistryName());
         itemPurpurSideSlab.setUnlocalizedName(itemPurpurSideSlab.getRegistryName().toString());
         event.getRegistry().register(itemPurpurSideSlab);
+
+        itemObsidianSideSlab.setRegistryName(obsidianSideSlab.getRegistryName());
+        itemObsidianSideSlab.setUnlocalizedName(itemObsidianSideSlab.getRegistryName().toString());
+        event.getRegistry().register(itemObsidianSideSlab);
+
 	}
-	
+
 	public static void inittextures(ModelRegistryEvent event)
 	{
-		
 	}
-	
+
 }

@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "facing=north": { "model": "sideslabs:obsidiansideslab" },
+    "facing=south": { "model": "sideslabs:obsidiansideslab", "y": 180 },
+    "facing=west":  { "model": "sideslabs:obsidiansideslab", "y": 270 },
+    "facing=east":  { "model": "sideslabs:obsidiansideslab", "y": 90 }
+  }
+}

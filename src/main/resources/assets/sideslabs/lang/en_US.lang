@@ -13,5 +13,7 @@ tile.sideslabs:sandstonesideslab.name=Sandstone Side Slab
 tile.sideslabs:sprucesideslab.name=Spruce Side Slab
 tile.sideslabs:stonebricksideslab.name=Stone Brick Side Slab
 tile.sideslabs:stonesideslab.name=Stone Side Slab
+tile:sideslabs:obdisianslab.name=Obsisian Slab
+tile:sideslabs:obsidiansideslab.name=Obsidian Side Slab
 
 itemGroup.sideslabs=Side Slabs

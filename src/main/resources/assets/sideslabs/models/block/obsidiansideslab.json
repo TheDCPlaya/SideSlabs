@@ -1,0 +1,7 @@
+{
+  "parent": "sideslabs:block/sideslab",
+  "textures": {
+    "face": "blocks/obsidian",
+    "side": "blocks/obsidian"
+  }
+}

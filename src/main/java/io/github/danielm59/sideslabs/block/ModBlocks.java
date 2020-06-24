@@ -3,6 +3,7 @@ package io.github.danielm59.sideslabs.block;
 import io.github.danielm59.sideslabs.SideSlabs;
 import io.github.danielm59.sideslabs.util.TextureHelper;
 import net.minecraft.block.Block;
+import net.minecraft.block.BlockObsidian;
 import net.minecraft.block.material.Material;
 import net.minecraftforge.client.event.ModelRegistryEvent;
 import net.minecraftforge.event.RegistryEvent;
@@ -26,9 +27,11 @@ public class ModBlocks
 	public static final Block darkoakSideSlab = new BlockSideSlab(Material.WOOD);
 	public static final Block redsandstoneSideSlab = new BlockSideSlab(Material.ROCK);
 	public static final Block purpurSideSlab = new BlockSideSlab(Material.ROCK);
+	public static final Block obsidianSideSlab = new BlockSideSlab(Material.ROCK);
 	
 	public static void init(RegistryEvent.Register<Block> event)
 	{
+
 		stoneSideSlab.setRegistryName(SideSlabs.MODID, "stonesideslab");
 		stoneSideSlab.setUnlocalizedName(stoneSideSlab.getRegistryName().toString());
         event.getRegistry().register(stoneSideSlab);
@@ -88,6 +91,13 @@ public class ModBlocks
 		purpurSideSlab.setRegistryName(SideSlabs.MODID, "purpursideslab");
 		purpurSideSlab.setUnlocalizedName(purpurSideSlab.getRegistryName().toString());
         event.getRegistry().register(purpurSideSlab);
+
+		obsidianSideSlab.setRegistryName(SideSlabs.MODID, "obsidiansideslab");
+		obsidianSideSlab.setUnlocalizedName(obsidianSideSlab.getRegistryName().toString());
+		event.getRegistry().register(obsidianSideSlab);
+
+
+
 	}
 
 	public static void inittextures(ModelRegistryEvent event)
@@ -107,6 +117,9 @@ public class ModBlocks
 		TextureHelper.register(itemDarkoakSideSlab);
 		TextureHelper.register(itemRedsandstoneSideSlab);
 		TextureHelper.register(itemPurpurSideSlab);
+		TextureHelper.register(itemObsidianSideSlab);
+
+
 	}
 	
 }
